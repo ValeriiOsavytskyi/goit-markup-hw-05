@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body>
+  <body data-page>
     <!----------------------------  header  -------------------------------------------------->
 
     <header class="header">
@@ -74,7 +74,9 @@
         <div class="container hero">
           <span class="images-hero"></span>
           <h1 class="sntns-hr">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn btn-sentence-section" type="button">Заказать услугу</button>
+          <button class="btn btn-sentence-section" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -138,14 +140,17 @@
           <h2 class="main-occupation-title">Чем мы занимаемся</h2>
 
           <ul class="list container-main-occupation-list">
-            <li>
+            <li class="occupation-item">
               <img src="./images/box1.jpg" alt="проєктирование" width="370" />
+              <div class="occupation-div"><p class="occupation-text">Десктопні додатки</p></div>
             </li>
-            <li>
+            <li class="occupation-item">
               <img src="./images/box2.jpg" alt="мобильные приложения" width="370" />
+              <div class="occupation-div"><p class="occupation-text">Мобільні додатки</p></div>
             </li>
-            <li>
+            <li class="occupation-item">
               <img src="./images/box3.jpg" alt="дизайн" width="370" />
+              <div class="occupation-div"><p class="occupation-text">Дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
@@ -547,10 +552,6 @@
       </div>
     </footer>
 
-    <!-- Вся твоя розмітка, включно з розміткою модалки -->
-
-    <!-- Ставимо перед закриваючим тегом body -->
-
     <!-- Modal window -->
 
     <div class="backdrop is-hidden" data-modal>
@@ -563,7 +564,7 @@
       </div>
     </div>
 
-    <script src="./js/header-scroll.js"></script>
-    <script src="./js/modal.js"></script>
+    <!--<script src="./header-scroll.js"></script> -->
+    <script src="./modal.js"></script>
   </body>
 </html>
